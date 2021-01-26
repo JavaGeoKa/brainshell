@@ -46,7 +46,7 @@ public class CardController {
                         e.printStackTrace();
                     }
                 });
-        Files.walk(Paths.get(args[0]))
+        Files.walk(Paths.get("/home/g/Downloads/java_test_task/imgs/"))
                 .filter(Files::isRegularFile)
                 .forEach(i -> {
                     patchFiles.add(i.toString());
